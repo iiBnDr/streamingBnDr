@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content === 'بندر') {
+    msg.reply('هلا , كلمني خاص لو سمحت :heart:');
   }
 });
 const devs = ["464575938215280641"];
