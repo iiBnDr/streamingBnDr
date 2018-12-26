@@ -37,7 +37,7 @@ client.on('message', message => {
       message.channel.send(`**✅**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
-  client.user.setUsername(${argresult}).then
+  client.user.setUsername($argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
