@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'السلام عليكم') {
-    msg.reply('عليكم السلام ورحمة الله وبركاته');
+  if (msg.content === 'Myping') {
+    msg.reply('Your Ping is LOL ');
   }
 });
 
