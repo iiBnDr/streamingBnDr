@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '') {
+  if (msg.content === 'سليعلاستايلات') {
     msg.reply('');
   }
 });
