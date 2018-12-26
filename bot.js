@@ -12,7 +12,7 @@ client.on('message', msg => {
 });
 
 const devs = ["464575938215280641"];
-const adminprefix = ["M"];
+const adminprefix = ["$"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
@@ -37,7 +37,7 @@ client.on('message', message => {
       message.channel.send(`**✅**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
-  client.user.setUsername(argresult).then
+  client.user.setUsername(${argresult}).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
