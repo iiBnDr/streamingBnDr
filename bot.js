@@ -19,22 +19,23 @@ client.on('message', message => {
 
   if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
-      message.channel.send(`**✅   ${argresult}**`)
+      message.channel.send(`**You are now Playing   ${argresult}**`)
   } else
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();
+      message.channel.send(`** Successfully Leaved ✅**`);
   } else
   if (message.content.startsWith(adminprefix + 'wt')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**✅   ${argresult}**`)
+      message.channel.send(`**You are now Watching   ${argresult}**`)
   } else
   if (message.content.startsWith(adminprefix + 'ls')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**✅   ${argresult}**`)
+      message.channel.send(`**You are now listening    ${argresult}**`)
   } else
   if (message.content.startsWith(adminprefix + 'st')) {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
-      message.channel.send(`**✅**`)
+      message.channel.send(`**You are now Streaming ${argresult} 🔮**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername($argresult).then
