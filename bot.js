@@ -48,7 +48,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 });
 
 
-const myDiscriminator = ["0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "1337"];
+const myDiscriminator = ["0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "1111", "2222", "3333", "4444", "5555", "6666", "7777", "8888", "9999", "0099"];
 const bot = new(require("discord.js")).Client({fetchAllMembers: true});
  
 const password = "password";
